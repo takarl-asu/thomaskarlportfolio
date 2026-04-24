@@ -1,0 +1,13 @@
+/* CSS by Thomas Karl */
+/* Color Pallet
+mid-green: #025940
+deep-green: #112619
+mid-brown: #8C4E03
+reddish-brown: #8C4D3F
+dusty-rose: #D98F89
+*/
+
+/* GLOBAL STYLES - MOBILE FIRST */
+body {
+    background-color: #D98F89;
+}
