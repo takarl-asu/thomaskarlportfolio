@@ -6,4 +6,4 @@ The HTML is semantic and validated.
 The CSS is not (yet) responsive. 
 There is no Javascript.
 Pages include index.html, about.html, resume.html, and projects.html.
-The URL is: 
+The URL is: https://takarl-asu.github.io/thomaskarlportfolio/
