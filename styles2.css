@@ -1,0 +1,169 @@
+/* CSS by Thomas Karl */
+/* Color Pallet
+dark-black: #10010D
+dark-gray: #2F3640
+mid-gray: #474F59
+mid-gold: #BF8D50
+dark-gold: #A68160
+*/
+
+/* GLOBAL STYLES - MOBILE FIRST */
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    background-color: #10010D;
+    color: #474F59;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    font-family: "Verdana", "Arial", sans-serif;
+    background-color: #10010D;
+    color: #BF8D50;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 10px solid #2F3640;
+}
+
+header h1 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: #474F59;
+    font-size: 1.25rem;
+}
+
+nav {
+    background-color: #10010D;
+    border-top: 5px solid #BF8D50;
+    border-bottom: 10px solid #2F3640;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    padding: 0.5rem;
+    margin: .25rem;
+}
+
+main p {
+    font-size: 1.25rem;
+    color: #474F59;
+}
+
+main {
+    padding: 1rem;
+}
+
+main h2 {
+    margin-top: 1rem;
+    color: #BF8D50;
+    font-size: 1.75rem;
+}
+
+a {
+    display: block;
+    background-color: #10010D;
+    color: #BF8D50;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #A68160;
+    color: #10010D;
+}
+
+img {
+    display: flex;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1rem 0;
+    border: 5px solid #A68160;
+    padding: 1rem;
+    background-color: #10010D;
+}
+
+aside {
+    margin: 0.5rem 0;
+    padding-top: .05rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+aside section {
+    background-color: #10010D;
+    border: 3px solid #A68160;
+    padding: 1.5rem;
+}
+
+aside section a {
+    background-color: #10010D;
+    color: #BF8D50;
+}
+
+footer {
+    background-color: #10010D;
+    color: #BF8D50;
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 10px solid #2F3640;
+}
+
+/* ===== MEDIA QUERIES (Medium) ===== */
+@media (min-width: 795px) {
+    body {
+        grid-template-columns: 1fr 150px;
+    }
+
+    header, nav, footer {
+            grid-column: 1 / -1;
+        }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card-row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+
+    section {
+        flex: auto;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== MEDIA QUERIES (Large) ===== */
+@media (min-width: 1167px) {
+    body {
+        grid-template-columns: 1fr 200px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        gap: 10rem;
+    }
+}
