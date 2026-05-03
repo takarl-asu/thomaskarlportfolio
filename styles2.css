@@ -12,7 +12,7 @@ body {
     font-family: "Helvetica", "Arial", sans-serif;
     margin: 0;
     background-color: #10010D;
-    color: #474F59;
+    color: lightgray;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -32,7 +32,7 @@ header h1 {
 
 header p {
     margin-top: 0.5rem;
-    color: #474F59;
+    color: lightgray;
     font-size: 1.25rem;
 }
 
@@ -55,7 +55,7 @@ nav a {
 
 main p {
     font-size: 1.25rem;
-    color: #474F59;
+    color: lightgray;
 }
 
 main {
