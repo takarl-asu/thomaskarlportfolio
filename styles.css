@@ -37,7 +37,7 @@ header p {
 }
 
 nav {
-    background-color: #F2F0D0;    
+    background-color: #F2F0D0;
     border-top: 5px solid #F27507;
     border-bottom: 10px solid #024873;
 }
@@ -92,4 +92,19 @@ footer {
     text-align: center;
     padding: 0.5rem;
     border-top: 10px solid #62CDD9;
+}
+
+/* ===== MEDIA QUERIES (Medium) ===== */
+@media (min-width: 600px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
