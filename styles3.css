@@ -1,0 +1,174 @@
+/* CSS by Heather Thomas */
+/* Color Pallet
+mid-pink: #D984BB
+mid-purple: #8C51A6
+mid-blue: #049DD9
+slightly-darker-blue: #0477BF
+mid-brown: #735151
+*/
+
+/* GLOBAL STYLES - MOBILE FIRST */
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    background-color: mistyrose;
+    color: #735151;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    font-family: "Verdana", "Arial", sans-serif;
+    background-color: #D984BB;
+    color: ivory;
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 10px solid #8C51A6;
+}
+
+header h1 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+header p {
+    margin-top: 0.5rem;
+    color: #735151;
+    font-size: 1.25rem;
+}
+
+nav {
+    background-color: #049DD9;
+    border-top: 5px solid ivory;
+    border-bottom: 10px solid #8C51A6;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    padding: 0.5rem;
+    margin: .25rem;
+}
+
+main p {
+    font-size: 1.25rem;
+    color: #735151;
+}
+
+main {
+    padding: 1rem;
+}
+
+main h2 {
+    margin-top: 1rem;
+    color: #735151;
+    font-size: 1.75rem;
+}
+
+a {
+    display: block;
+    background-color: #049DD9;
+    color: ivory;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: ivory;
+    color: #735151;
+}
+
+img {
+    display: flex;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1rem 0;
+    border: 5px solid #049DD9;
+    padding: 1rem;
+    background-color: mistyrose;
+}
+
+aside {
+    margin: 0.5rem 0;
+    padding-top: .05rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+aside section {
+    background-color: mistyrose;
+    border: 3px solid #049DD9;
+    padding: 1.5rem;
+}
+
+aside section a {
+    background-color: #049DD9;
+    color: ivory;
+}
+
+footer {
+    background-color: #D984BB;
+    color: ivory;
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 10px solid #8C51A6;
+}
+
+video {
+    display: flex;
+    margin: 0 auto;
+}
+
+/* ===== MEDIA QUERIES (Medium) ===== */
+@media (min-width: 795px) {
+    body {
+        grid-template-columns: 1fr 150px;
+    }
+
+    header, nav, footer {
+            grid-column: 1 / -1;
+        }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card-row {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+
+    section {
+        flex: auto;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== MEDIA QUERIES (Large) ===== */
+@media (min-width: 1167px) {
+    body {
+        grid-template-columns: 1fr 200px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        gap: 10rem;
+    }
+}
